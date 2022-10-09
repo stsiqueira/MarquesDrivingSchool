@@ -1,21 +1,30 @@
-import logo from './img/logo.JPG';
+
 import './App.css';
-import { FaPhoneAlt, FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import Contact from './components/Contact';
+
+import Header from './components/Header';
+import HeroImg from './components/HeroImg';
+import Testimonials from './components/Testimonials';
+import UsefulLinks from './components/UsefulLinks';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="logo" className='App-logo'/>
-        <a>  <FaPhoneAlt /> 236 808 8107</a>
-        <p>
-          <FaFacebookSquare /> mcanadaschooldriving 
-        </p>
-        <p>
-          <FaInstagram /> mcanadaschooldriving 
-        </p>
+      <div className='wrapper'>
 
-      </header>
+      <Header/>
+
+      <HeroImg/>
+
+      <UsefulLinks />
+
+      <Testimonials />
+
+      <Contact/>
+
+      </div>
+
     </div>
   );
 }
