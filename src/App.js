@@ -1,12 +1,13 @@
 
 import './App.css';
-import Contact from './components/Contact';
+import MarquesLogo from './img/logo.JPG'
 
 import Header from './components/Header';
 import HeroImg from './components/HeroImg';
 import Testimonials from './components/Testimonials';
 import UsefulLinks from './components/UsefulLinks';
-
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import Price from './components/Price';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
       <UsefulLinks />
 
       <Testimonials />
-
-      <Contact/>
+      
+      <Price />
+      <FloatingWhatsApp  accountName='Fabio Marques' phoneNumber='12368088107' avatar={MarquesLogo} allowClickAway={true} />
 
       </div>
 

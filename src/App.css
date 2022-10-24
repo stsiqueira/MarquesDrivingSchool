@@ -54,7 +54,8 @@ a:active {
 .usefulLinksContainer ul li {
   border: 1px dashed yellow;
   border-radius: 10px;
-  margin: 1rem 2rem;
+  width: 60%;
+  margin: 1.5rem auto;
   padding: 1rem;
 }
 .testimonialsCarrousel {
@@ -62,12 +63,61 @@ a:active {
   flex-direction: column;
 }
 .testimonialContainer {
-  width: 80%;
+  height: 300px;
+  width: 300px;
   margin: auto;
-  box-shadow: 1px 1px 1px 1px rgba(255, 255, 0, 0.536);
   border-radius: 20px;
   margin-top: 2rem;
-  padding: 3rem 2.5rem 1.5rem 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.testimonialContainer::before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 4000px;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    yellow
+  );
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.testimonialBox {
+  position: absolute;
+  height: 295px;
+  width: 295px;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #0c0d0d;
+  position: absolute;
+}
+.testimonialBox p {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-style: normal;
+}
+.testimonialBox h5 {
+  font-style: italic;
+  font-size: 1.3rem;
 }
 .message {
   font-style: italic;
@@ -76,4 +126,16 @@ a:active {
 .newDriver {
   padding: 1rem;
   text-align: right;
+}
+.PriceContainer {
+  margin: 2rem;
+}
+.PriceContainer h2 {
+  margin-bottom: 2rem;
+}
+.PriceContainer li {
+  padding-left: 25%;
+  text-align: left;
+  list-style: none;
+  margin-bottom: 0.5rem;
 }
