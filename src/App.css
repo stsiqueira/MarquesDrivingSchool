@@ -139,3 +139,22 @@ a:active {
   list-style: none;
   margin-bottom: 0.5rem;
 }
+.policeContainer {
+  margin: 3rem;
+}
+
+.policeContainer h1 {
+  margin: 1.5rem;
+}
+
+.policeContainer h2,
+h3,
+h4 {
+  text-align: left;
+  margin: 1rem;
+}
+
+.policeContainer ul li {
+  text-align: left;
+  margin: 0.5rem;
+}
