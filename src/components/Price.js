@@ -11,7 +11,6 @@ const Price = () => {
         <li>✅ class $140 ⏰2:00h</li>
         <li>✅ car rental for the road test $100</li>
       </ul>
-
     </div>
   )
 }
